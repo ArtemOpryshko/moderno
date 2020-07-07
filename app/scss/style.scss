@@ -2,7 +2,7 @@
 @import "global";
 @import "fonts";
 
-// *****************__H__E__A__D__E__R  __  S__T__A__R__T__*****************
+// *****************__H__E__A__D__E__R  __  S__T__A__R__T__*********************************************************************************
 
 .header__top-inner {
 	display: flex;
@@ -59,9 +59,9 @@
 		font-size: 14px;
 	}
 }
-// *****************__H__E__A__D__E__R  __  E__N__D__*****************
+// *****************__H__E__A__D__E__R  __  E__N__D__************************************************************************************
 
-// *****************__S__E__A__R__C__H  __  S__T__A__R__T__*****************
+// *****************__S__E__A__R__C__H  __  S__T__A__R__T__******************************************************************************
 
 .search {
 	background-repeat: no-repeat;
@@ -119,6 +119,126 @@
 				//  SAM
 				cursor: pointer;
 			}
+		}
+	}
+}
+
+// *****************__S__E__A__R__C__H  __  E__N__D__***********************************************************************************
+// *****************__P__R__O__D__U__C__T__S  __  S__T__A__R__T__***********************************************************************
+
+.products {
+	padding: 110px 0px;
+	background-color: $grey;
+}
+
+.products__inner-btn {
+	text-align: center;
+	margin-bottom: 60px;
+	button {
+		padding: 12px 20px;
+		border: none;
+		background-color: #fff;
+		color: $bg;
+		cursor: pointer;
+		& + button {
+			margin-left: 5px;
+		}
+		&.mixitup-control-active {
+			background-color: $red;
+			color: #fff;
+			outline: transparent;
+		}
+	}
+}
+
+.products__inner-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.product__item {
+	max-width: 442px;
+	width: 100%;
+	box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+	margin-bottom: 30px;
+	&-img {
+		min-height: 225px;
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 30px;
+		min-height: 90px;
+		align-items: center;
+		font-weight: 700; // SAM  у Вадіма і на макеті - Medium (500)
+		border-bottom: 1px solid #e7ecf2;
+	}
+	&-name {
+		max-width: 310px;
+	}
+	&-title {
+		color: $bg;
+		font-size: 18px;
+		display: block;
+	}
+	&-category {
+		color: $green;
+		font-size: 14px;
+		display: block;
+	}
+	&-price {
+		color: $bg;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	&-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 70px;
+		padding: 10px 30px;
+	}
+	&-author {
+		display: flex;
+		align-items: center;
+		.author-avatar {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: inline-block;
+			margin-right: 14px;
+		}
+		span {
+			font-size: 14px;
+			font-weight: 700; // SAM  у Вадіма і на макеті - Medium (500)
+		}
+	}
+}
+
+.products__bottom-btn {
+	text-align: center;
+	button {
+		margin: 45px 5px 0;
+		box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+		border: none;
+		background-color: #fff;
+		font-size: 16px;
+		color: $bg;
+		padding: 20px 0; //  SAM   у Вадіма падінги 20рх 30рх
+		max-width: 163px; //  SAM
+		width: 100%; //  SAM
+		&.mixitup-control-active {
+			background-color: $red;
+			color: #fff;
+			outline: transparent;
 		}
 	}
 }

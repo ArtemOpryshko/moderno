@@ -31,3 +31,24 @@ body {
 	margin: 0 auto;
 	padding: 0px 15px;
 }
+
+.container-fluid {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0px 30px;
+}
+
+@media (max-width: 720px) {
+	.container-fluid {
+		padding: 0px 15px;
+	}
+}
+
+.title {
+	text-align: center;
+	color: $bg;
+	font-size: 36px;
+	line-height: 60px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
