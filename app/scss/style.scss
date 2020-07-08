@@ -206,6 +206,7 @@
 	&-author {
 		display: flex;
 		align-items: center;
+		max-width: 245px;
 		.author-avatar {
 			width: 30px;
 			height: 30px;
@@ -219,6 +220,12 @@
 		span {
 			font-size: 14px;
 			font-weight: 700; // SAM  у Вадіма і на макеті - Medium (500)
+		}
+	}
+	&-star {
+		font-size: 12px;
+		span {
+			color: $bg;
 		}
 	}
 }
@@ -242,3 +249,37 @@
 		}
 	}
 }
+
+// *****************__P__R__O__D__U__C__T__S  __  E__N__D__*****************************************************************************
+// *****************__P__R__O__D__U__C__T____S__L__I__D__E__R  __  S__T__A__R__T__******************************************************
+
+.product-slider {
+	padding: 110px 0 120px;
+	.slick-dots {
+		text-align: center;
+		margin-top: 50px;
+		li {
+			display: inline-block;
+			margin-left: 3px;
+			margin-right: 3px;
+			&.slick-active {
+				button {
+					background-color: $green;
+				}
+			}
+			button {
+				width: 16px;
+				height: 16px;
+				font-size: 0;
+				border: none;
+				border-radius: 50%;
+				background-color: #e8e8e8;
+				cursor: pointer;
+				outline: none;
+			}
+		}
+	}
+}
+
+// *****************__P__R__O__D__U__C__T____S__L__I__D__E__R  __  E__N__D__************************************************************
+// *****************__P__R__O__D__U__C__T____S__L__I__D__E__R  __  S__T__A__R__T__******************************************************
