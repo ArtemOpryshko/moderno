@@ -60,7 +60,7 @@
 	}
 }
 // *****************__H__E__A__D__E__R  __  E__N__D__************************************************************************************
-
+// ****-----------------------------------------------------------------------------------------------------------------------------*****
 // *****************__S__E__A__R__C__H  __  S__T__A__R__T__******************************************************************************
 
 .search {
@@ -77,13 +77,13 @@
 	&-title {
 		margin-bottom: 10px;
 		font-size: 48px;
-		font-weight: 700;
+		@include f700;
 		line-height: 72px;
 	}
 	&-text {
 		margin-bottom: 50px;
 		font-size: 20px;
-		font-weight: 500;
+		@include f500;
 		line-height: 30px;
 	}
 	&-form {
@@ -98,14 +98,14 @@
 			height: 56px;
 			border: none;
 			font-size: 14px;
-			font-weight: 500;
+			@include f500;
 			padding-left: 25px;
 			padding-right: 60px;
 			outline-color: transparent; //  SAM
 			&::placeholder {
 				color: #90a4ae;
 				letter-spacing: 0.5px; //  SAM
-				font-weight: 500;
+				@include f500;
 			}
 		}
 		button {
@@ -124,6 +124,7 @@
 }
 
 // *****************__S__E__A__R__C__H  __  E__N__D__***********************************************************************************
+// ****-----------------------------------------------------------------------------------------------------------------------------****
 // *****************__P__R__O__D__U__C__T__S  __  S__T__A__R__T__***********************************************************************
 
 .products {
@@ -140,6 +141,7 @@
 		background-color: #fff;
 		color: $bg;
 		cursor: pointer;
+		outline: none;
 		& + button {
 			margin-left: 5px;
 		}
@@ -175,7 +177,7 @@
 		padding: 10px 30px;
 		min-height: 90px;
 		align-items: center;
-		font-weight: 700; // SAM  у Вадіма і на макеті - Medium (500)
+		@include f700; // SAM 700 у Вадіма і на макеті - Medium (500)
 		border-bottom: 1px solid #e7ecf2;
 	}
 	&-name {
@@ -194,7 +196,7 @@
 	&-price {
 		color: $bg;
 		font-size: 20px;
-		font-weight: 700;
+		@include f700;
 	}
 	&-info {
 		display: flex;
@@ -219,7 +221,7 @@
 		}
 		span {
 			font-size: 14px;
-			font-weight: 700; // SAM  у Вадіма і на макеті - Medium (500)
+			@include f700; // SAM 700 у Вадіма і на макеті - Medium (500)
 		}
 	}
 	&-star {
@@ -239,6 +241,7 @@
 		background-color: #fff;
 		font-size: 16px;
 		color: $bg;
+		outline: none;
 		padding: 20px 0; //  SAM   у Вадіма падінги 20рх 30рх
 		max-width: 163px; //  SAM
 		width: 100%; //  SAM
@@ -251,6 +254,7 @@
 }
 
 // *****************__P__R__O__D__U__C__T__S  __  E__N__D__*****************************************************************************
+// ****-----------------------------------------------------------------------------------------------------------------------------****
 // *****************__P__R__O__D__U__C__T____S__L__I__D__E__R  __  S__T__A__R__T__******************************************************
 
 .product-slider {
@@ -282,4 +286,80 @@
 }
 
 // *****************__P__R__O__D__U__C__T____S__L__I__D__E__R  __  E__N__D__************************************************************
-// *****************__P__R__O__D__U__C__T____S__L__I__D__E__R  __  S__T__A__R__T__******************************************************
+// ****-----------------------------------------------------------------------------------------------------------------------------****
+// *****************__A__D__V__A__N__T__A__G__E__S  __  S__T__A__R__T__*****************************************************************
+
+.advantages {
+	background-color: $bg;
+	padding: 110px 0;
+}
+
+.advantages__title {
+	color: #fff;
+}
+
+.advantages__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.advantages__item {
+	max-width: 370px;
+	text-align: center;
+	padding: 0 15px;
+	&:hover {
+		.advantages__item-image {
+			background-color: $green;
+			svg {
+				fill: #fff;
+				// stroke: #fff;
+			}
+		}
+		.advantages__item-title {
+			color: $green;
+		}
+	}
+	&-image {
+		width: 114px;
+		height: 114px;
+		background-color: #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 30px;
+		transition: all 0.5s;
+		svg {
+			color: #000;
+		}
+	}
+	&-title {
+		color: #fff;
+		font-size: 24px;
+		margin-bottom: 25px;
+		@include f500;
+		transition: all 0.5s;
+	}
+	&-text {
+		color: #b0bec5;
+		font-size: 15px;
+	}
+}
+
+.icosvg-1 {
+	svg {
+		width: 68px;
+	}
+}
+.icosvg-2 {
+	svg {
+		width: 70px;
+	}
+}
+.icosvg-3 {
+	svg {
+		width: 86px;
+	}
+}
+
+// *****************__A__D__V__A__N__T__A__G__E__S  __  E__N__D__***********************************************************************
+// ****-----------------------------------------------------------------------------------------------------------------------------****
