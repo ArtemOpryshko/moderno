@@ -363,3 +363,42 @@
 
 // *****************__A__D__V__A__N__T__A__G__E__S  __  E__N__D__***********************************************************************
 // ****-----------------------------------------------------------------------------------------------------------------------------****
+// *****************__A__U__T__H__O__R  __  S__T__A__R__T__*****************************************************************************
+
+.author {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 750px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__box {
+		max-width: 650px;
+		width: 100%;
+		min-height: 215px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $green;
+	}
+	&__title {
+		font-size: 30px;
+		line-height: 36px;
+		color: #fff;
+		max-width: 280px;
+		margin-right: 45px;
+		span {
+			@include f700;
+		}
+	}
+	&__link {
+		font-size: 18px;
+		line-height: 36px;
+		color: $bg;
+		padding: 14px 40px;
+		background-color: #fff;
+	}
+}
+
+// *****************__A__U__T__H__O__R  __  E__N__D__***********************************************************************************
