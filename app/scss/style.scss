@@ -1762,6 +1762,101 @@
 // ? product-aside-items end    ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 
 // *****************__P__R__O__D__U__C__T - O__N__E  __  E__N__D__************************************************************************
+// ***************************************************************************************************************************************
+// *****************__4__0__4__  S__T__A__R__T__    **************************************************************************************
+
+.page-404__wrapper,
+.about-us__wrapper {
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	margin-bottom: 150px;
+}
+
+.page-404__head,
+.about-us__head {
+	font-size: 24px;
+	color: #444444;
+	@include f500;
+	padding: 23px 27px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.page-404__inner {
+	text-align: center;
+	background-color: $green;
+	color: #fff;
+}
+
+.page-404__404 {
+	font-size: 300px;
+	line-height: 300px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+	color: #fffefe;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		background-image: url(../images/404.png);
+		width: 157px;
+		height: 301px;
+		margin-left: 15px;
+	}
+}
+
+.page-404__title {
+	margin-bottom: 30px;
+	@include f300;
+	font-size: 30px;
+	letter-spacing: 7px;
+
+	padding-bottom: 25px;
+}
+.page-404__text {
+	max-width: 510px;
+	font-size: 18px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.page-404__link {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 18px 30px;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	margin-bottom: 100px;
+}
+
+// *****************__4__0__4__  E__N__D__          **************************************************************************************
+// ***************************************************************************************************************************************
+// *****************__A__B__O__U__T__  U__S  __S__T__A__R__T__    ************************************************************************
+
+.about-us__inner {
+	padding: 0 50px;
+}
+
+.about-us__head {
+	color: $bg;
+}
+
+.about-us__box {
+	h3 {
+		font-size: 20px;
+		color: #444;
+		@include f700;
+		margin-top: 40px;
+		margin-bottom: 15px;
+	}
+	p {
+		color: #707070;
+		margin-bottom: 40px;
+	}
+}
+
+// *****************__A__B__O__U__T__  U__S  __E__N__D__    ******************************************************************************
 
 // ! ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 
