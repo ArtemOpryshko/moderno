@@ -2223,6 +2223,7 @@
 			color: #707070;
 			position: relative;
 			&.active {
+				color: $bg;
 				border-bottom: 2px solid $green;
 				&::before {
 					color: $green;
@@ -2294,6 +2295,151 @@
 }
 
 // *****************__P__R__O__F__I__L__E__   __E__N__D__ *****************************************************************************************
+// ************************************************************************************************************************************************
+// *****************__U__P__L__O__A__D__  __S__T__A__R__T__ ***************************************************************************************
+
+.upload__inner {
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	margin-bottom: 110px;
+	button {
+		color: #fff;
+		background-color: $green;
+		border: none;
+		text-align: center;
+		padding: 15px 36px;
+		@include f500;
+		margin-left: 175px;
+		cursor: pointer;
+	}
+}
+.upload__inner-title {
+	font-size: 24px;
+	@include f500;
+	color: $bg;
+	border-bottom: 1px solid #d7d7d7;
+	padding: 17px 35px;
+	margin-bottom: 40px;
+}
+
+.upload__inner-content {
+	margin-bottom: 30px;
+	padding-left: 45px;
+	padding-right: 50px;
+}
+
+.upload-line {
+	margin-bottom: 25px;
+	display: flex;
+	label {
+		color: #444;
+		min-width: 175px;
+		padding-right: 15px;
+		padding-top: 9px;
+		span {
+			color: $green;
+		}
+		&::placeholder {
+			color: #707070;
+		}
+	}
+	select,
+	input,
+	textarea {
+		width: 100%;
+		display: block;
+		border: 1px solid #d7d7d7;
+		background-color: #f9f9f9;
+		height: 40px;
+		padding: 0 18px;
+		color: #000;
+	}
+	textarea {
+		resize: none;
+		padding: 8px 18px;
+		height: 150px;
+	}
+	input[type="file"] {
+		outline: none;
+	}
+	.jq-selectbox {
+		width: 100%;
+	}
+	.jq-file {
+		width: 100%;
+		padding: 0 18px;
+		border-radius: 0px;
+		box-shadow: none;
+		border: 1px solid #d7d7d7;
+		background-color: #f9f9f9;
+		height: 40px;
+		&__name {
+			border-radius: 0;
+			box-sizing: border-box;
+			width: 100%;
+			height: 40px;
+			padding: 0;
+			margin-left: 110px;
+			border: none;
+			border-bottom-color: transparent;
+			background: transparent;
+			box-shadow: none;
+			font-size: 12px;
+			line-height: 40px;
+			color: #707070;
+		}
+		&__browse {
+			border-radius: 0;
+			top: 5px;
+			right: auto;
+			left: 9px;
+			padding: 0 12px;
+			border: 1px solid #d7d7d7;
+			border-radius: 0;
+			background: #fff;
+			box-shadow: none;
+			text-shadow: none;
+			font-size: 12px;
+			line-height: 26px;
+			color: #444;
+		}
+	}
+	.jq-selectbox__select {
+		height: 40px;
+		padding: 0 18px;
+		border: 1px solid #d7d7d7;
+		border-bottom-color: #d7d7d7;
+		border-radius: 0px;
+		background: #f9f9f9;
+		box-shadow: none;
+		font-family: "Roboto-Regular", sans-serif;
+		color: #707070;
+		text-shadow: none;
+		line-height: 40px;
+		&-text {
+			overflow: visible;
+		}
+	}
+	.jq-selectbox__trigger-arrow {
+		border: none;
+		top: 0;
+		right: 20px;
+		line-height: 40px;
+		font-size: 15px;
+		&::before {
+			content: "\f0d7";
+			font-family: "icomoon";
+		}
+	}
+	.jq-selectbox__trigger {
+		border-left: none;
+	}
+	.jq-selectbox__dropdown {
+		top: 37px;
+	}
+}
+
+// *****************__U__P__L__O__A__D__     __E__N__D__  *****************************************************************************************
 
 // ! ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 
