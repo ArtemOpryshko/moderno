@@ -2339,9 +2339,6 @@
 		span {
 			color: $green;
 		}
-		&::placeholder {
-			color: #707070;
-		}
 	}
 	select,
 	input,
@@ -2353,6 +2350,9 @@
 		height: 40px;
 		padding: 0 18px;
 		color: #000;
+		&::placeholder {
+			color: #707070;
+		}
 	}
 	textarea {
 		resize: none;
@@ -2440,6 +2440,150 @@
 }
 
 // *****************__U__P__L__O__A__D__     __E__N__D__  *****************************************************************************************
+// ************************************************************************************************************************************************
+// *****************__W__I__T__H__D__R__A__W__A__L__S__     __S__T__A__R__T__  ********************************************************************
+
+.withdrawal__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 110px;
+}
+
+.withdrawal__col {
+	max-width: 570px;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	height: 100%;
+}
+
+.withdrawal__title {
+	font-size: 24px;
+	@include f500;
+	color: $bg;
+	padding: 22px 33px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d7d7d7;
+}
+.withdrawal__content {
+	padding-left: 35px;
+	padding-right: 40px;
+	button {
+		margin-bottom: 50px;
+		color: #fff;
+		background-color: $green;
+		border: none;
+		text-align: center;
+		padding: 15px 36px;
+		@include f500;
+		cursor: pointer;
+	}
+}
+
+.withdrawal__form-line {
+	margin-bottom: 30px;
+	label {
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		@include f500;
+		color: $bg;
+		margin-bottom: 17px;
+		span {
+			color: $green;
+		}
+	}
+	input,
+	select {
+		width: 100%;
+		display: block;
+		border: 1px solid #d7d7d7;
+		background-color: #f9f9f9;
+		height: 40px;
+		padding: 0 18px;
+		color: #000;
+		&::placeholder {
+			color: #707070;
+		}
+	}
+	.jq-selectbox {
+		width: 100%;
+	}
+	.jq-selectbox__select {
+		height: 40px;
+		padding: 0 18px;
+		border: 1px solid #d7d7d7;
+		border-bottom-color: #d7d7d7;
+		border-radius: 0px;
+		background: #f9f9f9;
+		box-shadow: none;
+		font-family: "Roboto-Regular", sans-serif;
+		color: #707070;
+		text-shadow: none;
+		line-height: 40px;
+		&-text {
+			overflow: visible;
+		}
+	}
+	.jq-selectbox__trigger-arrow {
+		border: none;
+		top: 0;
+		right: 20px;
+		line-height: 40px;
+		font-size: 15px;
+		&::before {
+			content: "\f0d7";
+			font-family: "icomoon";
+		}
+	}
+	.jq-selectbox__trigger {
+		border-left: none;
+	}
+	.jq-selectbox__dropdown {
+		top: 37px;
+	}
+}
+
+.withdrawal__content-items {
+	padding-bottom: 35px;
+}
+
+.withdrawal__content-item {
+	display: flex;
+	height: 42px;
+	align-items: center;
+	font-size: 13px;
+	color: #444;
+	&:nth-child(odd) {
+		background-color: #f9f9f9;
+	}
+}
+
+.withdrawal__content-date {
+	width: 154px;
+	padding-left: 20px;
+	@include f500;
+}
+
+.withdrawal__content-email {
+	width: 180px;
+	@include f500;
+}
+
+.withdrawal__content-price {
+	width: 70px;
+	@include f700;
+}
+
+.withdrawal__content-payment {
+	width: 88px;
+	@include f700;
+	&.withdrawal__content-paid {
+		color: $green;
+	}
+}
+
+// *****************__W__I__T__H__D__R__A__W__A__L__S__     __E__N__D__  **************************************************************************
 
 // ! ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 
